@@ -12,16 +12,6 @@ import {
     }
     return user[0];
   }
-// async function createUserService(){
-//   try {
-//     const { name, email } = req.body;
-//     const user = await createUser(name, email);
-//     res.status(201).json(user.rows[0]);
-//   } catch (error) {
-//     res.status(500).json({ message: 'Server error' });
-//   }
-//   return user
-// };
 
 
 async function createUserService(userData){
