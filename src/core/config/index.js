@@ -1,5 +1,5 @@
 const EXPRESS_APP = {
-    port: process.env.MYPORT,
+    PORT: process.env.MYPORT,
   }
   
   export {
