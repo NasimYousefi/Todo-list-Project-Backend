@@ -1,5 +1,6 @@
 
 import express from 'express';
+import { authMiddleware } from '../../core/middleware/authorization.js';
 import {
   getTasksByUserIdController,
   getTaskByIdController,
@@ -10,6 +11,8 @@ import {
 import { createTaskValidator, updateTaskValidator } from './validations.js';
 
 const router = express.Router();
+
+router.use(authMiddleware);
 
 router.get('/user/:userId', getTasksByUserIdController);
 router.get('/:id', getTaskByIdController);
