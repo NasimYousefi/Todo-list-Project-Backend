@@ -6,7 +6,7 @@ import {
     findByEmail,
     updateUserPassword
   } from '../../models/users/index.js'
-  import bcrypt from 'bcrypt';
+  import bcrypt from 'bcryptjs';
   import jwt from 'jsonwebtoken';
   
   async function getUserByIdService(userId) {

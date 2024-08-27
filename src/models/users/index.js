@@ -1,6 +1,6 @@
 
 import { query } from '../../core/database/database-handler.js';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 async function getUserById(id){
     const sql = `
